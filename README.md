@@ -16,11 +16,13 @@
   
 # 第三步: 实现dataSource中的两个方法
 #pragma mark - EYWaterflowViewDataSource(必须实现下面两个方法)
-- (NSUInteger)numberOfCellsInWaterflowView:(EYWaterflowView *)waterflowView {
+- (NSUInteger)numberOfCellsInWaterflowView:(EYWaterflowView *)waterflowView
+{
     return 100;
 }
 
-- (EYWaterflowViewCell *)waterflowView:(EYWaterflowView *)waterflowView cellAtIndex:(NSUInteger)index {
+- (EYWaterflowViewCell *)waterflowView:(EYWaterflowView *)waterflowView cellAtIndex:(NSUInteger)index
+{
     static NSString * cellID = @"cellID";
 
     EYWaterflowViewCell * cell = [waterflowView dequeueReusableCellWithIdentifier:cellID];
