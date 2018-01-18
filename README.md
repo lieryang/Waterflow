@@ -10,10 +10,10 @@
 
 ### 第二步: 创建组件添加到self.view中
 ```
-  EYWaterflowView * waterflowView = [[EYWaterflowView alloc] initWithFrame:self.view.bounds];
-  waterflowView.dataSource = self;
-  waterflowView.delegate = self;
-  [self.view addSubview:waterflowView];
+EYWaterflowView * waterflowView = [[EYWaterflowView alloc] initWithFrame:self.view.bounds];
+waterflowView.dataSource = self;
+waterflowView.delegate = self;
+[self.view addSubview:waterflowView];
 ```
   
 ### 第三步: 实现dataSource中的两个方法
